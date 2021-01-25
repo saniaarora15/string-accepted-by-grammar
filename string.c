@@ -12,24 +12,26 @@ void main()
        gets(str);
        n=strlen(str);
 
-       if(n==1){
+       if(n==1)
+       {
            if(str[0]== 'c')
           {  printf(" String is accepted");}
        }
        else if(n%2!=0)
       {
        if(str[0]=='a' && str[n-1]=='a' || str[0]=='b' && str[n-1]=='b')
-       {
+        {
              if(count('a',str,n)%2==0 && count('b',str,n)%2==0)
               { if(str[(n-1)/2]=='c')
                  printf("String accepted");}
-       }
-       }
+        }
+      }
         else
         {
             printf("String not accepted");
-         }
+        }
 }
+
 int count(char a,char str[],int n){
      int i,count=0;
      for(i=0;i<n;i++){
